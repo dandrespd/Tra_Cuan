@@ -1,0 +1,40 @@
+# Include configuration files
+include *.yaml
+include *.yml
+include *.json
+include .env.example
+
+# Include documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+recursive-include docs *.md *.rst
+
+# Include assets
+recursive-include assets *.png *.jpg *.ico
+recursive-include templates *.html *.css *.js
+
+# Include tests
+recursive-include tests *.py
+include pytest.ini
+include .coveragerc
+
+# Include notebooks
+recursive-include notebooks *.ipynb
+
+# Include requirements
+include requirements*.txt
+
+# Include CI/CD
+include .github/workflows/*.yml
+include .gitlab-ci.yml
+include Dockerfile
+include docker-compose.yml
+
+# Exclude unnecessary files
+exclude .gitignore
+exclude .dockerignore
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .DS_Store

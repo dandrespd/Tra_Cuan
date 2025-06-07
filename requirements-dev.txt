@@ -1,0 +1,24 @@
+# Development only dependencies
+pytest-xdist==3.5.0  # Parallel testing
+pytest-benchmark==4.0.0  # Performance testing
+hypothesis==6.92.2  # Property-based testing
+freezegun==1.4.0  # Time mocking
+responses==0.24.1  # HTTP mocking
+factory-boy==3.3.0  # Test factories
+
+# Debugging
+ipdb==0.13.13
+pdbpp==0.10.3
+django-extensions==3.2.3  # shell_plus
+werkzeug==3.0.1  # Debugger
+
+# Documentation
+pydoc-markdown==4.8.2
+docstring-parser==0.15
+interrogate==1.5.0  # Docstring coverage
+
+# CI/CD
+tox==4.11.4
+nox==2023.4.22
+coverage==7.3.4
+codecov==2.1.13
